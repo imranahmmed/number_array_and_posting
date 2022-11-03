@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="inputNumbers d-flex w-25 mb-3">
+        <input type="text" class="form-control numberInput" placeholder="Enter Number">
+        <button class="btn btn-primary numberCheckBtn">Check</button>
+    </div>
+    <div class="numbers">
+        <h5>Odd/ Even Numbers</h5>
+        <h4 class="oddNumbers"></h4>
+        <h4 class="evenNumbers"></h4>
+        ---------------------------------------------------------
+        <h5>Unique Numbers</h5>
+        <h4 class="uniqueNumbers"></h4>
+        ---------------------------------------------------------
+        <h5>Sorting Numbers</h5>
+        <h4 class="sortingNumbers"></h4>
+
+        <p class="numberError"></p>
+    </div>
+
+
+    <div class="postBox">
+        <h3>What's on your mind?</h3>
+        <div class="newPostInput">
+            <div class="addForm">
+                <input class="form-control nameInput" type="text" placeholder="Write Your Name">
+                <textarea class="form-control postInput" name="" id="" rows="4"
+                    placeholder="What's on your mind ?"></textarea>
+                <button class="postButton "> <i class="uil uil-rss"></i> Post</button>
+            </div>
+        </div>
+
+        <p class="inputError"></p>
+        <ol class="allPost">
+        
+        </ol>
+    </div>
+
+    <div class="editShadow">
+        <div class="editInput">
+            <div class="editForm">
+                <input class="form-control nameEdit" type="text" placeholder="Edit Your Name">
+                <textarea class="form-control postEdit" name="" id="" rows="4"
+                    placeholder="What's on your mind ?"></textarea>
+                <input id="editid" type="hidden">
+                <button class="editButton"><i class="uil uil-refresh"></i> Update</button>
+                <p class="editError"></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
