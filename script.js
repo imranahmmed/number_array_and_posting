@@ -6,8 +6,6 @@ let oddNumber = document.querySelector(".oddNumbers"),
     numberCheckBtn = document.querySelector(".numberCheckBtn"),
     numberError = document.querySelector(".numberError"),
     numberArr = [];
-    // numberArr = [1,2,3,33,11,22,4,5,6,9,8,7,99,66];
-
 
 numberCheckBtn.addEventListener("click", () => {
     if (numberInput.value - 9999999999999999999999) {
@@ -22,7 +20,7 @@ numberCheckBtn.addEventListener("click", () => {
 
     oddEven();
     uniqueNumbers();
-    sortednumbers()
+    // sortednumbers()
 });
 
 // ===========================================
@@ -62,18 +60,18 @@ function uniqueNumbers() {
 // ===========================================
 // Number sorting without sort method;
 // ===========================================
-let sortNumberArr = [1,25,4,15,78,36,25,98,998,75123,2,6,9,8,3,56586]
-    sortNumberArr.map((number1, index1) => {
-        sortNumberArr.map((number2, index2) => {
-            if (sortNumberArr[index1] < sortNumberArr[index2]) {
-                temp = sortNumberArr[index1];
-                sortNumberArr[index1] = sortNumberArr[index2];
-                sortNumberArr[index2] = temp;
-            }
-        });
+let sortNumberArr = [1, 25, 4, 15, 78, 36, 25, 98, 998, 75123, 2, 6, 9, 8, 3, 56586]
+sortNumberArr.map((number1, index1) => {
+    sortNumberArr.map((number2, index2) => {
+        if (sortNumberArr[index1] < sortNumberArr[index2]) {
+            temp = sortNumberArr[index1];
+            sortNumberArr[index1] = sortNumberArr[index2];
+            sortNumberArr[index2] = temp;
+        }
     });
-    sortingNumbers.innerHTML = `Sorted Numbers => ${sortNumberArr}`
-    
+});
+sortingNumbers.innerHTML = `Sorted Numbers => ${sortNumberArr}`
+
 
 
 
@@ -160,11 +158,16 @@ function addPost() {
                 } else {
                     editError.style.display = "none";
                     console.log("valid name");
-                    if (editId.value == index) {
-                        postArr[index].name = nameEdit.value;
-                        postArr[index].post = postEdit.value;
-                        addPost();
-                    }
+                    // if (editId.value == index) {
+                    //     postArr[index].name = nameEdit.value;
+                    //     postArr[index].post = postEdit.value;
+                    //     addPost();
+                    // }
+                    
+                    postArr[index].name = nameEdit.value;
+                    postArr[index].post = postEdit.value;
+                    addPost();
+
                     editInput.style.transform = "scale(0)";
                 }
             });
